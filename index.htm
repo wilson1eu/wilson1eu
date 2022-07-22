@@ -7,7 +7,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
-let value = params.number; // "some_value"
+let value = params.number;
 window.location.href = "whatsapp://send?phone=44" + value;
 
 </script>
