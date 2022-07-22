@@ -9,11 +9,11 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 
 let value = params.number;
 window.location.href = "whatsapp://send?phone=44" + value;
-
+close();
 </script>
 
 </head>
 <body>
-
+<h1>This should now open in Whatsapp Desktop</h1>
 </body>
 </html>
