@@ -6,14 +6,12 @@
 const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
-// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+
 let value = params.number; // "some_value"
 window.location.href = "whatsapp://send?phone=44" + value;
 
 </script>
 
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
 </head>
 <body>
 
